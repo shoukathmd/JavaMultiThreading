@@ -3,11 +3,11 @@ package com.multithreading;
 public class ThreadUnsafeClass {
     int count = 0;
 
-    public void incrementCounter(){
+    public synchronized void incrementCounter(){
         count++;
     }
 
-    public void decrementCounter(){
+    public synchronized void decrementCounter(){
         count--;
     }
 
